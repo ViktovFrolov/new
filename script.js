@@ -1,20 +1,42 @@
 "use strict";
 
-console.log('arr' + "- object");
-console.log(4 + + "5");
+/*let numberOfFilms = prompt(`Сколько фильмов вы уже посмотрели?`,`` );
 
-let incr = 10,
-    decr = 10;
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privet: false
+};
 
+const first = prompt(`Один из последних просмотренных фильмов?`,),
+      first_1 = prompt(`На сколько оцените его?`,),
+      second = prompt(`Один из последних просмотренных фильмов?`,),
+      second_1 = prompt(`На сколько оцените его?`,);
 
-console.log(incr--);
-console.log(++decr);
+personalMovieDB.movies = {
+    first: first_1,
+    second: second_1
+};
 
-console.log(5%2);
+console.log(personalMovieDB);*/
+const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
 
-console.log(2+2 === '8');
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
 
-const isCheced = false,
-      isClose = false;
+const a = prompt('Один из последних просмотренных фильмов?', ''),
+      b = prompt('На сколько оцените его?', ''),
+      c = prompt('Один из последних просмотренных фильмов?', ''),
+      d = prompt('На сколько оцените его?', '');
 
-console.log(isCheced || !isClose)
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
+
+console.log(personalMovieDB);
